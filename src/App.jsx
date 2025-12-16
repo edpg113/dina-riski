@@ -154,7 +154,7 @@ function App() {
                   Kinoy
                 </h2>
                 <h3 data-aos="fade-up" data-aos-delay="400">
-                  Muhammad Riski Maulana
+                  Muhammad Rizki Maulana
                 </h3>
                 <p data-aos="fade-up" data-aos-delay="600">
                   Putra pertama dari Pasangan
