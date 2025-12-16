@@ -215,85 +215,6 @@ function App() {
           </button>
         </div>
       </div>
-      {/* <!-- CERITA CINTA --> */}
-      <div className="progress" id="cerita">
-        {/* <!-- JUDUL --> */}
-        <div className="container-cerita">
-          <div className="judul-undangan">
-            <h1 data-aos="fade-up" data-aos-delay="200">
-              Cerita Cinta
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="300">
-              Banyak cerita yang kami lalui sehingga akhirnya kami bisa bersatu,
-              cerita yang akan kami kenang selalu, dan cerita itu kami bagi
-              untuk anda.
-            </p>
-          </div>
-
-          <section className="timeline">
-            <ul>
-              <li>
-                <div>
-                  <p data-aos="fade-zoom-in" data-aos-delay="200">
-                    Pertama kali jumpa
-                  </p>
-                  <span data-aos="fade-zoom-in" data-aos-delay="300">
-                    Saat pertama kali bertemu dia sedang bermain di depan rumah
-                    bersama anak kecil, pada waktu itu aku hanya memperhatiakan
-                    dan tidak berani menyapanya, singkat cerita 2 tahun kemudian
-                    kami di pertemukan kembali.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <p data-aos="fade-zoom-in" data-aos-delay="200">
-                    Mulai dekat
-                  </p>
-                  <span data-aos="fade-zoom-in" data-aos-delay="300">
-                    <time>Bulan Oktober 2024</time> Disaat itu dia kembali
-                    dengan keindahannya dan aku pun mulai mengagumi sekaligus
-                    jatuh hati kepadanya, bulan februari 2025 aku dapat kontak
-                    wa dia dan langsung menghubunginya disitu kami mulai berbagi
-                    cerita, tidak beselang lama aku memberanikan diri untuk
-                    bertemu wali wanita tersebut untuk meminta restu sekaligus
-                    menjalani perkenalan.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <p data-aos="fade-zoom-in" data-aos-delay="200">
-                    Komitmen bersama
-                  </p>
-                  <span data-aos="fade-zoom-in" data-aos-delay="300">
-                    <time>Bulan Mei 2025</time> Kami ber dua berkomitmen
-                    menjalin hubungan yang lebih serius dan aku berniat untuk
-                    melamarnya, tidak hanya itu kami pun di uji berbagai
-                    permasalahan permasalahan yang membuat kami ber dua hampir
-                    putus asa menjalani hubungan yang serius ini, tetapi karena
-                    tekad kami yang kuat alhamdulillah saat ini kami masih
-                    mempertahan hubungan ini karena kami yakin setelah turun nya
-                    badai pasti pelangi pun akan muncul.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div data-aos="fade-zoom-in" data-aos-delay="200">
-                  <p>Lamaran</p>
-                  <span data-aos="fade-zoom-in" data-aos-delay="300">
-                    <time>Bulan Oktober 2025</time> Alhamdulillah menjadi moment
-                    yang sangat bahagia, kami sepakat untuk melangsungkan
-                    lamaran dan menentukan pernikahan. Terimakasih ya kamu telah
-                    mempertahankan hubungan ini, kamu adalah yang terbaik
-                    untuku. I love you riska tersayang 🩷🥰😘
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div>
       {/* Galery */}
       <div className="galery">
         <div className="bg-galery">
@@ -326,9 +247,17 @@ function App() {
               <img src="/couple/dana.png" alt="Dana" />
               <div className="rekening">
                 <h3>Dina</h3>
+                <h3>083115825847</h3>
+              </div>
+            </div>
+            <div className="icon-bank" data-aos="fade-up" data-aos-delay="600">
+              <img src="/couple/seabank.webp" alt="Seabank" />
+              <div className="rekening">
+                <h3>Dina</h3>
                 <h3>901030604550</h3>
               </div>
             </div>
+
           </div>
         </div>
       </div>
