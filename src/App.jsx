@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import MusicPlayer from "./components/Musik";
-import Backsound from "./audio/soundtrack.mp3";
+import Backsound from "./audio/backsound pernikahan.m4a";
 import { useRef, useState } from "react";
 import Prewed1 from "/couple/couple.jpg";
 import Prewed2 from "/couple/couple2.jpg";
@@ -17,14 +17,28 @@ function App() {
   const audioRef = useRef(null);
   useEffect(() => {
     AOS.init({
-      duration: 1600,
-      offset: 100, // jarak scroll sebelum animasi aktif
-      easing: "ease-in-out",
+      duration: 2000,
+      offset: 120, // jarak scroll sebelum animasi aktif
+      easing: "ease-in-out-cubic",
       once: true,
       startEvent: "wedding:open",
     });
 
     document.body.style.overflow = "hidden"; // Sembunyikan scroll saat di landing page
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      document.documentElement.style.setProperty(
+        "--vh",
+        `${window.innerHeight * 0.01}px`
+      );
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const getQueryParam = (param) => {

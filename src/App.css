@@ -8,12 +8,36 @@
   font-family: "Libertinus Serif Display", system-ui;
 }
 
+body {
+  background-color: #f8f8f8; /* Fallback background */
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/watercolor.png");
+  background-attachment: fixed;
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+}
+
+.App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.637);
+  z-index: -1;
+}
+
 @media screen and (min-width: 768px) {
   .App {
     width: 100%;
     max-width: 430px; /* ukuran “layar HP” */
     margin: 0 auto; /* center horizontal */
     min-height: 100vh; /* isi bisa nambah panjang */
+    min-height: calc(var(--vh, 1vh) * 100);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     .start {
       margin: 0 auto;
       width: 430px;
@@ -43,11 +67,13 @@
   body {
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 
   .start {
     position: fixed;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -61,10 +87,12 @@
       background-position: center;
       background-size: cover;
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
       width: 100%;
       .cover {
         /* backdrop-filter: grayscale(1) brightness(0.9); */
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
 
         .container {
           text-align: center;
@@ -121,17 +149,19 @@
   }
 
   .quotes {
-    background-image: url("../public/couple/background\ flower.jpg");
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     .bg-quotes {
-      /* background: rgb(119, 39, 39); */
-      /* background-position: center; */
+      padding: 2rem;
+      border-radius: 10px;
       .container2 {
         text-align: center;
-        padding-top: 45%;
+        padding-top: 0;
         h1 {
           font-weight: 500;
           font-size: 1.5rem;
@@ -166,11 +196,7 @@
   }
   .pengantin {
     .bg-pengantin {
-      /* background: rgb(248, 248, 248); */
-      background-image: url("../public/couple/background\ flower\ 2.jpg");
-      /* background-position: center; */
-      background-size: cover;
-      height: 130vh;
+      padding-bottom: 2rem;
       width: 100%;
       .container3 {
         text-align: center;
@@ -247,12 +273,9 @@
   .acara {
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
-    /* background: rgb(248, 248, 248); */
-    background-image: url("../public/couple/bgm4.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
+    position: relative;
 
     .bg-acara {
       background: url("../public//couple/couple6.jpg");
@@ -268,11 +291,12 @@
       z-index: 2;
       text-align: center;
       padding-top: 25%;
+      position: relative;
+      padding-bottom: 2rem;
       h1 {
         font-weight: 300;
         font-size: 1.8rem;
-        /* color: rgb(32, 32, 32); */
-      color: white;
+        color: rgb(32, 32, 32);
 
       }
       .acara-item {
@@ -315,11 +339,7 @@
     }
   }
   .progress {
-    /* background: rgb(248, 248, 248); */
-    background-image: url("../public/couple/bgm4.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 180vh;
+    padding: 5rem 0;
     width: 100%;
   }
 
@@ -407,15 +427,15 @@
 
   .galery {
     .bg-galery {
-      background-position: center;
-      /* background: rgb(248, 248, 248); */
-      background-image: url("../public/couple/bgm4.jpg");
-      background-size: cover;
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .container5 {
         text-align: center;
-        padding-top: 20%;
+        padding-top: 0;
         h1 {
           font-weight: 300;
           font-size: 2rem;
@@ -431,18 +451,15 @@
   }
   .gift {
     .bg-gift {
-      background-position: center;
-      /* background: rgb(248, 248, 248); */
-      background-image: url("../public/couple/bgm4.jpg");
-      /* background-size: cover; */
-      /* height: 100vh;/ */
       width: 100%;
-      background-size: cover;
       height: 85vh;
-      width: 100%;
+      height: calc(var(--vh, 1vh) * 85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .container6 {
         text-align: center;
-        padding-top: 40%;
+        padding-top: 0;
         h1 {
           font-weight: 300;
           color: rgba(58, 56, 57, 0.89);
@@ -478,7 +495,9 @@
     filter: grayscale(0.5) brightness(0.9);
     .bg-penutup {
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
       position: relative; /* parent untuk watermark absolute */
+      background-color: rgba(0, 0, 0, 0.3);
       .container7 {
         text-align: center;
         padding-top: 45%;
