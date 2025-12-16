@@ -138,14 +138,14 @@ function App() {
               <div className="pengantin-item">
                 <div
                   className="bg-foto"
-                  data-aos="fade-zoom-in"
+                  data-aos="fade-up"
                   data-aos-delay="800"
                 >
                   <img className="foto" src="/couple/dina.jpg" alt="Wanita" />
                 </div>
                 <div
                   className="bg-foto"
-                  data-aos="fade-zoom-in"
+                  data-aos="fade-up"
                   data-aos-duration="400"
                 >
                   <img className="foto" src="/couple/kinoy.jpg" alt="Pria" />
@@ -226,7 +226,7 @@ function App() {
               "Cinta bukan tentang menemukan seseorang untuk hidup bersama, tapi
               tentang menemukan seseorang yang tak bisa kamu hidup tanpanya."
             </p>
-            <div data-aos="zoom-in" data-aos-delay="600">
+            <div data-aos="fade-up" data-aos-delay="600">
               <Carousel images={foto} autoPlayInterval={4000} />
             </div>
           </div>
